@@ -44,8 +44,7 @@ def hit?(utotal)
     utotal+=deal_card
   else
     invalid_command
-    prompt_user
-    get_user_input
+    hit?(utotal)
   end
   utotal
 end
